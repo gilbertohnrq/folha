@@ -1,0 +1,46 @@
+import 'package:app_client/app/news_details/domain/entities/news_details_entity.dart';
+
+class NewsDetailsAdapter {
+  static NewsDetailsEntity fromJson(dynamic news) {
+    return NewsDetailsEntity(
+      idDnNoticia: news['id_dn_noticia'] == null ? null : int.tryParse(news['id_dn_noticia'] as String),
+      idCfgUser: news['id_cfg_user'] == null ? null : int.tryParse(news['id_cfg_user'] as String),
+      nomeUsuario: news['nome_usuario'] as String?,
+      idDnEditoria: news['id_dn_editoria'] == null ? null : int.tryParse(news['id_dn_editoria'] as String),
+      editoria: news['editoria'] as String? ?? '-',
+      editoriaSlug: news['editoria_slug'] as String?,
+      chapeu: news['chapeu'] as String?,
+      titulo: news['titulo'] as String? ?? '-',
+      slug: news['slug'] as String?,
+      subtitulo: news['subtitulo'] as String?,
+      resumo: news['resumo'] as String?,
+      blocoTitulo: news['bloco_titulo'] as String?,
+      blocoSubtitulo: news['bloco_subtitulo'] as String?,
+      texto: news['texto'] as String?,
+      autor: news['autor'] as String?,
+      dataNoticia: news['data_noticia'] as String? ?? '-',
+      dataEntrada: news['data_entrada'] as String?,
+      dataSaida: news['data_saida'] as String?,
+      dataOrdenacao: news['data_ordenacao'] as String?,
+      dataCadastro: news['data_cadastro'] as String?,
+      dataUltimaAtualizacao: news['data_ultima_atualizacao'] as String?,
+      imagem1: news['imagem1'] as String?,
+      imagem1Legenda: news['imagem1_legenda'] as String?,
+      imagem1Credito: news['imagem1_credito'] as String?,
+      imagem2: news['imagem2'] as String?,
+      imagem2Legenda: news['imagem2_legenda'] as String?,
+      imagem2Credito: news['imagem2_credito'] as String?,
+      primeiraDaGaleria: news['primeira_da_galeria'] as String?,
+      liberaComentario: news['libera_comentario'] == null ? null : int.tryParse(news['libera_comentario'] as String),
+      noticiaUrl: news['noticia_url'] as String?,
+      noticiaUrlAmp: news['noticia_url_amp'] as String?,
+      noticiaUrlMobile: news['noticia_url_mobile'] as String?,
+      urlExterna: news['url_externa'] as String?,
+      bloqueiaAnunciosGoogle: news['bloqueia_anuncios_google'] == null ? null : int.tryParse(news['bloqueia_anuncios_google'] as String),
+      flagAudio: news['flag_audio'] == null ? null : int.tryParse(news['flag_audio'] as String),
+      flagVideo: news['flag_video'] == null ? null : int.tryParse(news['flag_video'] as String),
+      flagGaleria: news['flag_galeria'] == null ? null : int.tryParse(news['flag_galeria'] as String),
+      libera: news['libera'] == null ? null : int.tryParse(news['libera'] as String),
+    );
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020408403898",
+    "project_id": "folha-de-pernambuco",
+    "storage_bucket": "folha-de-pernambuco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020408403898:android:bd0bb7843f832de2a1af83",
+        "android_client_info": {
+          "package_name": "com.example.app_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020408403898-9sqf1tjm3d4ucck2i0tucav7da4c8hh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn2H8vNcUM07gn8MJ13mU6JgtN1z1Coq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020408403898-9sqf1tjm3d4ucck2i0tucav7da4c8hh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
